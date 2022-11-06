@@ -1,0 +1,96 @@
+{
+  "randevular": [
+    {
+      "id": "1667487472541",
+      "date": "2022-11-13T20:57",
+      "hastaId": "1667413264103"
+    },
+    {
+      "id": "1667578162775",
+      "date": "2022-11-06T14:45",
+      "hastaId": "1667413264103"
+    },
+    {
+      "id": "1667757030440",
+      "date": "2022-11-10T21:51",
+      "hastaId": "1667757030439"
+    }
+  ],
+  "hastalar": [
+    {
+      "id": "1667413264103",
+      "name": "FATİH 1",
+      "surname": "KORKMAZ 2",
+      "phone": "05555555550",
+      "islemIds": [
+        "1667413263760",
+        "1667487472542",
+        "1667578162776"
+      ]
+    },
+    {
+      "id": "1667414029003",
+      "name": "akın",
+      "surname": "sakın",
+      "phone": "05555555552",
+      "islemIds": [
+        "1667414028963"
+      ]
+    },
+    {
+      "id": "1667757030439",
+      "name": "Ali",
+      "surname": "Veli",
+      "islemIds": [
+        "1667757030438"
+      ],
+      "phone": "05555555555"
+    }
+  ],
+  "islemler": [
+    {
+      "id": "1667413263760",
+      "sikayet": "MENİKÜS",
+      "uygulananTedavi": "",
+      "yazilanIlaclar": [
+        "dizlik",
+        " ",
+        "şiş kremi",
+        " ",
+        "burun spreyi"
+      ]
+    },
+    {
+      "id": "1667413774379",
+      "sikayet": "panik atak",
+      "uygulananTedavi": "",
+      "yazilanIlaçlar": []
+    },
+    {
+      "id": "1667414028963",
+      "sikayet": "otizm",
+      "uygulananTedavi": "GENEL MUAYENE",
+      "yazilanIlaclar": [
+        "majezik"
+      ]
+    },
+    {
+      "id": "1667487472542",
+      "sikayet": "baş ağrısı",
+      "uygulananTedavi": "",
+      "yazılanIlaçlar": []
+    },
+    {
+      "id": "1667578162776",
+      "sikayet": "abc",
+      "uygulananTedavi": "",
+      "yazılanIlaçlar": []
+    },
+    {
+      "id": "1667757030438",
+      "sikayet": "baş ağrısı",
+      "uygulananTedavi": "",
+      "yazilanIlaclar": []
+    }
+  ]
+}

@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Hastalar from "./pages/Hastalar";
+import HastaEkle from "./pages/HastaEkle";
+import RandevuEkle from "./pages/RandevuEkle";
+import HastaDetay from "./pages/HastaDetay";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/hastalar" element={<Hastalar />} />
+        <Route path="/hasta-ekle" element={<HastaEkle />} />
+        <Route path="/randevu-ekle" element={<RandevuEkle />} />
+        <Route path="/hasta-detay/:hastaId" element={<HastaDetay />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
