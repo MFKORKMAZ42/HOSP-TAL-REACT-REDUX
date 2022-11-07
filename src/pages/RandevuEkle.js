@@ -5,7 +5,9 @@ import { useNavigate } from "react-router-dom";
 
 import Header from "../components/Header";
 
-import axios from "axios";
+import api from "../api/api";
+// import axios from "axios";
+import urls from "../api/urls";
 
 const RandevuEkle = (props) => {
   const navigate = useNavigate();
@@ -19,15 +21,15 @@ const RandevuEkle = (props) => {
   const [randevular, setRandevular] = useState(null);
 
   useEffect(() => {
-    axios
-      .get("http://localhost:3004/hastalar")
+    api
+      .get(urls.hastalar)
       .then((res) => {
         setHastalar(res.data);
       })
       .catch((err) => console.log(err));
     //alttaki axios get i silince veriler db.json da görünmüyordu. buldum çözdüm hahahaha
-    axios
-      .get("http://localhost:3004/randevular")
+    api
+      .get(urls.randevular)
       .then((res) => setRandevular(res.data))
       .catch((err) => console.log(err));
   }, []);
@@ -77,22 +79,22 @@ const RandevuEkle = (props) => {
         islemIds: [...hasHasta.islemIds, newIslem.id],
       };
 
-      axios
-        .post("http://localhost:3004/randevular", newRandevu)
+      api
+        .post(urls.randevular, newRandevu)
         .then((res) => {
           console.log("randevu kayıt", res);
         })
         .catch((err) => console.log(err));
 
-      axios
-        .post("http://localhost:3004/islemler", newIslem)
+      api
+        .post(urls.islemler, newIslem)
         .then((res) => {
           console.log("işlem kayıt", res);
         })
         .catch((err) => console.log(err));
 
-      axios
-        .put(`http://localhost:3004/hastalar/${hasHasta.id}`, updatedHasta)
+      api
+        .put(`${urls.hastalar}/${hasHasta.id}`, updatedHasta)
         .then((res) => {
           console.log("hasta update", res);
         })
@@ -117,22 +119,22 @@ const RandevuEkle = (props) => {
         date: date,
         hastaId: newHasta.id,
       };
-      axios
-        .post("http://localhost:3004/randevular", newRandevu)
+      api
+        .post(urls.randevular, newRandevu)
         .then((res) => {
           console.log("randevu kayıt", res);
         })
         .catch((err) => console.log(err));
 
-      axios
-        .post("http://localhost:3004/islemler", newIslem)
+      api
+        .post(urls.islemler, newIslem)
         .then((res) => {
           console.log("işlem kayıt", res);
         })
         .catch((err) => console.log(err));
 
-      axios
-        .post(" http://localhost:3004/hastalar", newHasta)
+      api
+        .post(urls.hastalar, newHasta)
         .then((res) => {
           console.log("hasta kayıt", res);
         })

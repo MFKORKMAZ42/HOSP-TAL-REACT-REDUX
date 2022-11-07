@@ -51,13 +51,9 @@
     {
       "id": "1667413263760",
       "sikayet": "MENİKÜS",
-      "uygulananTedavi": "",
+      "uygulananTedavi": "GENEL MUAYENE",
       "yazilanIlaclar": [
-        "dizlik",
-        " ",
-        "şiş kremi",
-        " ",
-        "burun spreyi"
+        "majezik"
       ]
     },
     {
@@ -77,8 +73,11 @@
     {
       "id": "1667487472542",
       "sikayet": "baş ağrısı",
-      "uygulananTedavi": "",
-      "yazılanIlaçlar": []
+      "uygulananTedavi": "asdas",
+      "yazılanIlaçlar": [],
+      "yazilanIlaclar": [
+        "asdas"
+      ]
     },
     {
       "id": "1667578162776",
